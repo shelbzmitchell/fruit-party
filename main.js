@@ -31,7 +31,7 @@ $('form').keypress((e) => {
         console.log('form submitted');
     }
 })
-
+ 
 
 
 // Initialize and add the map

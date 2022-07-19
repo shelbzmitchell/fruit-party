@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fruit</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script src="main.js" async></script>
+
+  <section class="lock">
+    <div class="lock__top">
+      <div class="lock__img-container lock__img-container--top">
+        <img src="./assets/pineapple-top.png" alt="">
+      </div>
+    </div>
+    <div class="lock__bottom">
+      <div class="lock__img-container lock__img-container--bottom">
+        <img src="./assets/pineapple-bottom.png" alt="">
+      </div>
+      <form name="login" class="lock__login">
+        <input class="lock__input" name="pass" size="6" type="password">
+        <input class="button lock__button" value="Enter" onclick="pasuser(this.form)" type="submit">
+      </form>
+    </div>
+  </section>
+  <section class="home hidden">
+    <h1>Pineapple Party</h1>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxNfML3IMjqXFc50qHBTg0nqpcWYoyjFA&callback=initMap"
+      defer></script>
+  </section>
+</body>
+
+</html>

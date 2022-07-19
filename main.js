@@ -2,10 +2,10 @@
 //open pineapple if password matches
 
 function pasuser(form) { 
-if (form.pass.value=="stest") { 
+if (form.pass.value=="lemonlime") { 
 $(".lock__top").animate({height:"toggle"},1000);
 $(".lock__bottom").animate({height:"toggle"},1000);
-$(".home").addClass("active").removeClass("hidden");
+$(".home").addClass("active").addClass("fade-in").removeClass("hidden");
 // $(".lock").addClass("hidden");
 setTimeout(function () {
     $(".lock").addClass("hidden");

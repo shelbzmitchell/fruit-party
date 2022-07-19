@@ -219,3 +219,20 @@ color:purple
         width:100%;
     }
   }
+  .fade-in {
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.backgroundColor{
+    background-color: #b9e9ec;
+}
+.active {
+    display:block;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

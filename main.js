@@ -32,6 +32,8 @@ $('form').keypress((e) => {
     }
 })
 
+
+
 // Initialize and add the map
 function initMap() {
     // The location of event
